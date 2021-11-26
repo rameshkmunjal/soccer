@@ -69,10 +69,16 @@ table, td, th{
     border-collapse: collapse;
 }
 td, th {
-    padding:0px 8px;
+    padding:2px 8px;
+    height:60px;
 }
-th{
-    height:50px;
+.team-name-cell{
+    padding-left:20px;
+    text-align:left;
+}
+.logo{
+    height:48px;
+    width:48px;
 }
 /* footer styling */
 .footer{

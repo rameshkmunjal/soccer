@@ -6,8 +6,8 @@ class Leaderboard extends React.Component{
         return this.props.standings.map(standing=>{
           return(
             <tr  key={standing.team.id} onClick={(e)=>this.onSelect(standing.team.id)}>
-               <td>{standing.team.name}</td>
-               <td className="centered"><img src={standing.team.logo} width="50" height="50" alt="logo" /></td>
+               <td className="team-name-cell">{standing.team.name}</td>
+               <td className="centered"><img src={standing.team.logo} className="logo" alt="logo" /></td>
                <td className="centered">{standing.rank}</td>               
                <td className="centered">{standing.all.played}</td>
                <td className="centered">{standing.all.win}</td>
@@ -26,7 +26,7 @@ class Leaderboard extends React.Component{
             <table>
                 <thead>
                         <tr>
-                            <th>Name</th>
+                            <th className="team-name-cell">Name</th>
                             <th>Logo</th>
                             <th className="centered">Rank</th>
                             <th className="centered">Played</th>
